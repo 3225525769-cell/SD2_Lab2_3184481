@@ -12,6 +12,9 @@ public class Conversions {
     }
 
     public int stringToInteger(String number) {
+        if (number == null) {
+            throw new NumberFormatException("Null string");
+        }
 
         return Integer.parseInt(number);
     }
