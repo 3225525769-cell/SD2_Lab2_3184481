@@ -5,9 +5,9 @@ public class Conversions {
         return a*1.08;
 
     }
-    public double dollarToEuro(){
+    public double dollarToEuro(double b){
 
-        return 0;
+        return 0.0;
     }
     public int StringToInteger(){
 
