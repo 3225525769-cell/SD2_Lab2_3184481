@@ -11,7 +11,7 @@ public class Conversions {
     }
     public int stringToInteger(String number){
 
-        return 0;
+        return Integer.parseInt(number);
     }
     public String integerToString(){
 
