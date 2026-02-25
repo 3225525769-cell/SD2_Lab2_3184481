@@ -30,7 +30,7 @@ public class Conversions {
         if(input==null){
             throw new NullPointerException("String can not be null ");
         }
-        StringBuilder sb = new StringBuilder(input.length());
+        StringBuilder sb = new StringBuilder();
               for(char c: input.toCharArray()){
                   if(Character.isUpperCase(c)){
                       sb.append(Character.toLowerCase(c));
