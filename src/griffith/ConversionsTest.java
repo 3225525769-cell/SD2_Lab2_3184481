@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ConversionsTest {
     private final Conversions conversions = new Conversions();
-    private static final double ExchangRate = 1.08;
+    private static final double ExchangeRate = 1.08;
 
     @org.junit.jupiter.api.Test
     void testEuroToDollar() {
