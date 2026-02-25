@@ -9,7 +9,7 @@ public class Conversions {
 
         return b/1.08;
     }
-    public int StringToInteger(){
+    public int stringToInteger(String number){
 
         return 0;
     }
@@ -23,4 +23,4 @@ public class Conversions {
     }
 
 
-}
+

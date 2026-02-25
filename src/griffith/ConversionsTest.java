@@ -26,7 +26,10 @@ public class ConversionsTest {
     }
 
     @org.junit.jupiter.api.Test
-    void stringToInteger() {
+    void teststringToInteger() {
+        assertEquals(123,conversions.stringToInteger("123"));
+        assertEquals(-123,conversions.stringToInteger("-123"));
+        assertEquals(0,conversions.stringToInteger("0"));
     }
 
     @org.junit.jupiter.api.Test
