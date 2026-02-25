@@ -17,7 +17,12 @@ public class ConversionsTest {
     }
 
     @org.junit.jupiter.api.Test
-    void dollarToEuro() {
+    void testDollarToEuro() {
+        assertEquals(108.0,conversions.dollarToEuro());
+        assertEquals(-108.0,conversions.dollarToEuro());
+        assertEquals(0.0,conversions.dollarToEuro());
+
+
     }
 
     @org.junit.jupiter.api.Test
