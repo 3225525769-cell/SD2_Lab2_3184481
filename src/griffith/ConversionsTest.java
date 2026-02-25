@@ -44,8 +44,12 @@ public class ConversionsTest {
     }
 
     @org.junit.jupiter.api.Test
-    void switchCase() {
-        assertEquals("hELLO wORLD",conversions.switchCase("Hello World"));
+    /*
+    This method is used to verify that the case of characters in the string has been switched correctly.
+    Test boundary cases and exception handling simultaneously.
+     */
+    void testSwitchCase() {
+        assertEquals("pUSH uP",conversions.switchCase("Push Up"));
         assertEquals("784972QWErty",conversions.switchCase("784972qweRTY"));
         assertEquals("",conversions.switchCase(""));
         assertThrows(NullPointerException.class,()->conversions.switchCase(null));

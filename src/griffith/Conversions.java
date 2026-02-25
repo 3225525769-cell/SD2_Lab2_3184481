@@ -26,9 +26,26 @@ public class Conversions {
         return String.valueOf(number) ;
     }
 
-    public String switchCase() {
+    public String switchCase(String  input) {
+        if(input==null){
+            throw new NullPointerException("String can not be null ");
+        }
+        StringBuilder sb = new StringBuilder(input.length());
+              for(char c: input.toCharArray()){
+                  if(Character.isUpperCase(c)){
+                      sb.append(Character.toLowerCase(c));
 
-        return "";
+                  }
+                  else if(Character.isLowerCase(c)){
+                      sb.append(Character.toUpperCase(c));
+                  }
+                  else{
+                      sb.append(c);
+                  }
+
+              }
+
+        return sb.toString();
     }
 }
 
