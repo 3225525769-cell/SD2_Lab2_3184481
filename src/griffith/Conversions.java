@@ -19,9 +19,9 @@ public class Conversions {
         return Integer.parseInt(number);
     }
 
-    public String integerToString() {
+    public String integerToString(int number) {
 
-        return "";
+        return String.valueOf(number) ;
     }
 
     public String switchCase() {

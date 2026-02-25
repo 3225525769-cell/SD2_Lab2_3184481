@@ -34,6 +34,9 @@ public class ConversionsTest {
 
     @org.junit.jupiter.api.Test
     void integerToString() {
+        assertEquals("123",conversions.integerToString(123));
+        assertEquals("-123",conversions.integerToString(-123));
+        assertEquals("0",conversions.integerToString(0));
 
 
     }
