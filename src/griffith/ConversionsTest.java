@@ -1,4 +1,6 @@
 package griffith;
+//Zeyuan Mi
+//3184481
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -26,14 +28,14 @@ public class ConversionsTest {
     }
 
     @org.junit.jupiter.api.Test
-    void teststringToInteger() {
+    void testStringToInteger() {
         assertEquals(123,conversions.stringToInteger("123"));
         assertEquals(-123,conversions.stringToInteger("-123"));
         assertEquals(0,conversions.stringToInteger("0"));
     }
 
     @org.junit.jupiter.api.Test
-    void integerToString() {
+    void testIntegerToString() {
         assertEquals("123",conversions.integerToString(123));
         assertEquals("-123",conversions.integerToString(-123));
         assertEquals("0",conversions.integerToString(0));
@@ -43,5 +45,9 @@ public class ConversionsTest {
 
     @org.junit.jupiter.api.Test
     void switchCase() {
+        assertEquals("hELLO wORLD",conversions.switchCase("Hello World"));
+        assertEquals("784972QWErty",conversions.switchCase("784972qweRTY"));
+        assertEquals("",conversions.switchCase(""));
+        assertThrows(NullPointerException.class,()->conversions.switchCase(null));
     }
 }

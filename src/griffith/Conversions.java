@@ -1,4 +1,6 @@
 package griffith;
+//Zeyuan Mi
+//3184481
 
 public class Conversions {
     public double euroToDollar(double a) {
